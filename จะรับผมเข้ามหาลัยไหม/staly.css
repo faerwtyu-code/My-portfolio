@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff8800, #ff4108ee);
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    position: relative;
+    height: 200px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+#yesBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+#yesBtn:active {
+    transform: scale(0.9);
+}
+
+#yesBtn {
+    background: #00ff88;
+    color: black;
+}
+
+#noBtn {
+    background: #ff3c3c;
+    color: white;
+    position: absolute;
+    transition: left 0.1s linear, top 0.1s linear, transform 0.1s;
+}
+
+#noBtn:hover,
+#noBtn:active {
+    transform: none;
+    box-shadow: none;
+}
+
+
+.success {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
